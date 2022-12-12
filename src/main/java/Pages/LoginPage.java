@@ -14,7 +14,6 @@ public class LoginPage {
     private static final By REGISTER_LINK = By.xpath("(//a[@class='Auth_link__1fOlj'])[1]");
     private static final By PASSWORD_RECOVER_LINK = By.xpath("(//a[@class='Auth_link__1fOlj'])[2]");
 
-
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -43,5 +42,4 @@ public class LoginPage {
     public void passwordRecoveryButtonClick() {
         driver.findElement(PASSWORD_RECOVER_LINK).click();
     }
-
 }

@@ -1,5 +1,4 @@
 package Pages;
-
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,6 @@ public class RegisterPage {
     private static final By REGISTER_BUTTON = By.xpath("//button[text()='Зарегистрироваться']");
     private static final By ERROR_TEXT = By.xpath("//p[@class='input__error text_type_main-default']");
     private static final By LOGIN_LINK = By.className("Auth_link__1fOlj");
-
 
     public RegisterPage(WebDriver driver) {
         this.driver = driver;

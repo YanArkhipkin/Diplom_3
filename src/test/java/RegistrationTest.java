@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-
 public class RegistrationTest {
     private WebDriver driver;
     private final static String URL = "https://stellarburgers.nomoreparties.site/";

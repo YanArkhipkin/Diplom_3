@@ -28,7 +28,6 @@ public class LoginTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get(URL);
-
     }
 
     @Test

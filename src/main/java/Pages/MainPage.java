@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainPage {
-
     private WebDriver driver;
     private static final By USER_CABINET_BUTTON = By.xpath("//p[text()='Личный Кабинет']");
     private static final By LOGIN_BUTTON = By.xpath("//button[text()='Войти в аккаунт']");
@@ -55,8 +54,7 @@ public class MainPage {
 
     @Step("Получение наименования активного таба")
     public String currentActiveText() {
-        String bunsText= driver.findElement(TAB_ACTIVE).getText();
-        return bunsText;
+        return driver.findElement(TAB_ACTIVE).getText();
     }
 
     @Step("Проверка видимости табов конструткора")
@@ -66,7 +64,4 @@ public class MainPage {
         driver.findElement(SAUCES_TAB).isDisplayed();
         driver.findElement(FILLINGS_TAB).isDisplayed();
     }
-
-    //(?)тест на активный таб - isSelected()
-
 }
